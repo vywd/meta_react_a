@@ -1,0 +1,44 @@
+.header{
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left{
+    min-width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.linkedin{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(./icons_avatars/linkedin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.codewars{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(./icons_avatars/codewars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.mail{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(./icons_avatars/mail.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header_right{
+    min-width: 150px;
+    display: flex;
+    justify-content: space-around;
+}

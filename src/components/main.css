@@ -1,0 +1,30 @@
+.main{
+    flex-grow: 1;
+}
+.container{
+    width: 900px;
+}
+.greetings{
+    height: calc(100vh - 50px);
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects{
+    height: 100vh;
+    background-color:brown;
+}
+.contscts{
+    height: calc(100vh - 50px);
+    background-color: blueviolet;
+}
+.greetingssection{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.greetingsImg{
+    max-width: 100px;
+}
