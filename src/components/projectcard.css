@@ -1,0 +1,22 @@
+.pcard{
+    max-width: 500px;
+    min-width: 200px;
+    min-height: 40vh;
+    border-radius: 15px;
+    background-color: rgba(225, 225, 225, .5);
+}
+.pcard_image{
+    width: 100%;
+    border-radius: 15px;
+    height: 100px;
+    overflow: hidden;
+}
+.pcard_discr{
+    margin: 5px;
+}
+.pcard_name{
+    margin-left: 5px;
+}
+.pcard_link{
+    margin: 5px;
+}

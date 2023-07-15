@@ -6,25 +6,104 @@
 }
 .greetings{
     height: calc(100vh - 50px);
-    background-color: bisque;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 .projects{
-    height: 100vh;
-    background-color:brown;
+    min-height: 100vh;
 }
 .contscts{
     height: calc(100vh - 50px);
     background-color: blueviolet;
 }
 .greetingssection{
-    height: 20vh;
+    /* height: 20vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 .greetingsImg{
     max-width: 100px;
+    /* align-self: center; */
+    position: absolute;
+    top: -300%;
+    /* left: 50%;
+    transform: translate(-50%, 0); */
+    left: -320%;
+}
+@keyframes centred {
+    from{
+        left: -320%;
+        transform: rotate(0deg);
+    }
+    to{
+        left: 30%;
+        transform: rotate(720deg);
+    }
+}
+.avatarCentred{
+    /* left: 50%!important;
+    transform: translate(-50%, 0)!important;  */
+    /* animation-duration: 3s;
+    animation-name: centred; */
+    animation-name: centred;
+    animation-duration: 3s;
+    max-width: 100px;
+    /* transform: translate(-50%, 0); */
+    left: 30%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Ubuntu:wght@300&display=swap');
+@keyframes textapear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.greetingsTxt{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Caprasimo', cursive;
+    animation-name: textapear;
+    animation-duration: 4s;
+}
+
+.greetingsBio{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    animation-name: textapear;
+    animation-duration: 4s;
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+@media (max-width: 500px) {
+    .grids {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+.projectstext{
+    padding: 20px 0;    
+}
+
+
+
+
+.scaledclass{
+    transition: all .2s ease-in-out;
+}
+.scaledclass:hover{
+    transform: scale(1.3);
 }
