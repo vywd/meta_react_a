@@ -81,6 +81,7 @@
 }
 
 .grids{
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -95,7 +96,9 @@
   }
 
 .projectstext{
-    padding: 20px 0;    
+    padding: 20px 0; 
+    text-align: center;
+
 }
 
 
